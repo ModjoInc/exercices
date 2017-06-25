@@ -22,22 +22,24 @@ function stopFunction() {
   clearInterval(int);
 }
 */
+let divD = document.querySelectorAll('.container');
+console.dir(divD);
 
+for (let i = 0; i < divD.length; i++) {
+  this.addEventListener('mouseenter', disapear, false);
+  this.addEventListener('mouseout', appear, false);
 function disapear(event) {
-    let selElem = event.target;
-    selElem.style['display'] = 'none';
+    let di= event.target
+    di.style['display'] = 'none';
+
 }
 
 function appear(event) {
-    let selElem = event.target;
-    selElem.style['display'] = 'block';
-  }
+  let di= event.target
+    di.style['display'] = 'block';
 
-  let divD = document.querySelectorAll('.container');
-for (var i = 0; i < divD.length; i++) {
-  divD[i].//suite:::::::::::::::::::::
 }
 
-
-//
-console.dir(divD);
+  divD[i].addEventListener('mouseenter', disapear, false);
+  divD[i].addEventListener('mouseout', appear, false);
+}
