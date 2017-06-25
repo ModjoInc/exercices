@@ -33,10 +33,11 @@ function appear(event) {
     selElem.style['display'] = 'block';
   }
 
-let divD = document.querySelector('.container');
+  let divD = document.querySelectorAll('.container');
+for (var i = 0; i < divD.length; i++) {
+  divD[i].//suite:::
+}
+
 
 //
-
-
-
 console.dir(divD);
